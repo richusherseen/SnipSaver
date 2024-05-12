@@ -9,6 +9,13 @@ This Django project implements a RESTful API for saving and retrieving short tex
 - Implement JWT authentication for user authorization.
 - Integrated Swagger UI for easy API documentation access.
 
+### Prerequisites
+
+Make sure you have the following installed on your local machine:
+
+- Python 3.11+
+- pip (Python package manager)
+
 ## Installation
 
 1. Clone this repository to your local machine:
@@ -21,13 +28,30 @@ This Django project implements a RESTful API for saving and retrieving short tex
     ```bash
    cd snip_saver
    ```
-3. Install dependencies:
+3. Create a virtual environment:
+    ```bash
+    python -m venv venv
+    ```
+4. Activate the virtual environment:
+
+- On Windows:
+
+  ```bash
+  venv\Scripts\activate
+  ```
+
+- On macOS and Linux:
+
+  ```bash
+  source venv/bin/activate
+  ```
+5. Install dependencies:
 
     ```bash
    pip install -r requirements.txt
    ```
 
-4. Apply migrations:
+6. Apply migrations:
     ```bash
    python manage.py migrate
 
