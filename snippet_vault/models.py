@@ -9,7 +9,12 @@ class Base(models.Model):
         abstract = True
 
 class Tag(Base):
-    title = models.CharField(max_length=100, unique=True)
+    title = models.CharField(max_length=100)
+    
+    class Meta:
+        indexes = [
+            models.Index(fields=['title'])
+        ]
 
     def __str__(self):
         return self.title
